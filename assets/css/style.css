@@ -1,345 +1,1219 @@
-<!DOCTYPE html>
-<html lang="en">
+/**
+* Template Name: Bikin - v4.2.0
+* Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Kiwi Maru', serif, "Open Sans", sans-serif;
+  color: #444444;
+}
 
-  <title>英語カウンセリングの例</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+a {
+  color: #89b0ae;
+  text-decoration: none;
+}
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KN003WFZEQ"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+a:hover {
+  color: #555b6e;
+  text-decoration: none;
+}
 
-  		gtag('config', 'G-KN003WFZEQ');
-	</script>
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Krub", sans-serif;
+}
 
-  <!-- Favicons -->
-  <link href="assets/img/lightbulb.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+.bold{
+  font-weight: bold;
+}
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Krub:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+.underline-pink{
+  border-bottom: solid 2px #ffd6ba;
+}
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+.title{
+  margin-bottom: 10px;
+}
 
-  <!-- Iconfy -->>
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+.gen-img {
+  width: 70%;
+  margin: 20px 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+@media (min-width: 567px) {
+  .gen-img {
+    width: 50%;
+  }
+}
 
-  <!-- =======================================================
-  * Template Name: Bikin - v4.2.0
-  * Template URL: https://bootstrapmade.com/bikin-free-simple-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+@media (min-width: 992px) {
+  .gen-img {
+    width: 40%;
+  }
+}
 
-<body>
+.right{
+  text-align: right;
+}
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+.hand{
+  font-family: 'Just Another Hand', cursive;
+  font-size: 1.7rem;
+}
 
-      <h1 class="logo"><a href="index.html">英語お悩み相談室</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #ffd6ba;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Me</a></li>
-          <li><a class="nav-link scrollto" href="https://note.com/libra_joki" target="_blank">Blog</a></li>
-          <li><a class="nav-link scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSdo2I7DgNEOVqC1zFTji2jpGJjX8QWhBAQf1B-eGhUyeeBXQw/viewform?usp=sf_link" target="_blank">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
 
-    </div>
-  </header><!-- End Header -->
+.back-to-top:hover {
+  background: #555b6e;
+  color: #fff;
+}
 
-  <main id="main">
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
 
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>英語カウンセリングの例</li>
-        </ol>
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #89b0ae;
+  border-top-color: #bee3db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
 
-      </div>
-    </section><!-- End Breadcrumbs -->
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-    <section class="inner-page">
-      <div class="container">
-        <div class="section-title"  data-aos="fade-up">
-          <h1>英語カウンセリングの例</h1>
-        </div>
-        
-        <div class="example" data-aos="fade-up">
-        <h2>会社員Aさんの場合</h2>
-        <img src="assets/img/A.png" class="eg-thum" alt="ジャケットを着た女性のアイコン">
-        <h3>目標</h3>
-        <p>
-          会社のミーティングで、話している内容を理解し、質問や意見が言えるようになること
-        </p>
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-        <h3>現状</h3>
-        <p>
-          ・話すスピードが速すぎて聞き取れない<br>
-          ・とっさに文章で話すことができず、そのため手を挙げる勇気が出ない
-        </p>
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
 
-        <h3>課題</h3>
-        <p>
-          ・リスニング：自然なスピードの英語を理解すること<br>
-          ・スピーキング：瞬時に文章を作ること
-        </p>
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #ffd6ba;
+  border-bottom: 2px solid #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
 
-        <h3>学習アドバイス</h3>
-        <p>
-          ・リスニング：リピーティング、オーバーラッピング、シャドーイング、ミーティングの内容を録音して聞き返す<br>
-          ・スピーキング：15/45 Exercise、英語日記を書く、英語でひとりごと
-        </p>
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 
-        <h3>学習プラン</h3>
-        <p>
-          ・毎朝出勤前：30分、英語のニュース音源を使ってリスニングトレーニング（通し聞き、意味理解、文字を見ながらシャドーイング）<br>
-          ・通勤時：目に入ったものを英語で描写する癖をつける（人の容姿、街並みなど）<br>
-          ・毎晩食後：15/45 Exercise（15秒で質問の答えを考え45秒で回答する練習）　3セット、<br>
-           （→慣れてきたら回数を減らす代わりにオンライン英会話25分追加。ニュースを読んでディスカッションする練習。）、<br>
-           英語のニュース音源を使ってリスニングトレーニング（オーバーラッピング、文字を見ずにシャドーイング）、<br>
-           英語で日記を書く　<br>
-          ・常に：ひとりごとを言うときはすべて英語にする<br>
-          ・英語のミーティング後：その場で言えなかったことを後で文章にしてみる
-        </p>
+@media (max-width: 414px){
+  #header .logo {
+    font-size: 20px;
+  }
+}
 
-        <h3>ある日のスケジュール</h3>
-        <table class="time">
-          <tr>
-            <th>Time</th>
-            <th>Schedule</th>
-          </tr>
-          <tr>
-            <td>7:00-8:00</td>
-            <td>起床・朝食</td>
-          </tr>
-          <tr>
-            <td>8:00-8:30</td>
-            <td>英語のニュース音源を使ってリスニングトレーニング（通し聞き・意味理解・文字を見ながらシャドーイング）</td>
-          </tr>
-          <tr>
-            <td>8:30-9:00</td>
-            <td>通勤：電車内で目に入ったものを頭の中で英語で描写する</td>
-          </tr>
-          <tr>
-            <td>9:00-12:00</td>
-            <td>仕事</td>
-          </tr>
-          <tr>
-            <td>12:00-12:45</td>
-            <td>ランチ休憩</td>
-          </tr>
-          <tr>
-            <td>12:45-13:00</td>
-            <td>新しく学んだ単語の復習</td>
-          </tr>
-          <tr>
-            <td>13:00-18:30</td>
-            <td>仕事</td>
-          </tr>
-          <tr>
-            <td>18:30-19:00</td>
-            <td>通勤：その日の出来事について頭の中で英語でひとりごと</td>
-          </tr>
-          <tr>
-            <td>19:00-21:00</td>
-            <td>夕食、お風呂</td>
-          </tr>
-          <tr>
-            <td>21:00-21:30</td>
-            <td>英語のニュース音源を使ってリスニングトレーニング（オーバーラッピング・文字を見ずにシャドーイング）</td>
-          </tr>
-          <tr>
-            <td>21:30-22:00</td>
-            <td>15/45 Exercise</td>
-          </tr>
-          <tr>
-            <td>22:00-23:30</td>
-            <td>休憩・フリータイム</td>
-          </tr>
-          <tr>
-            <td>23:30-24:00</td>
-            <td>英語日記</td>
-          </tr>
-          <tr>
-            <td>24:00</td>
-            <td>就寝</td>
-          </tr>
-          </table>
+#header .logo a {
+  color: #fff;
+}
 
-        </div>
+#header .logo img {
+  max-height: 40px;
+}
 
-        <div class="example" data-aos="fade-up"> 
-        <h2>旅行が趣味のBさんの場合</h2>
-        <img src="assets/img/B.png" class="eg-thum" alt="本を持つ男性のアイコン">
-        <h3>目標</h3>
-        <p>
-          海外旅行先で友達を作ること
-        </p>
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
 
-        <h3>現状</h3>
-        <p>
-          ・話しかけたものの相手が言っていることが理解できず気まずくなってしまう<br>
-          ・理解できても単語でしか答えられず会話が続かない
-        </p>
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
 
-        <h3>課題</h3>
-        <p>
-          ・リスニング：英語の自然な発音を理解すること
-          ・スピーキング：短くても文で話すこと、会話が続くように相手に質問をすること
-        </p>
+.navbar li {
+  position: relative;
+}
 
-        <h3>学習アドバイス</h3>
-        <p>
-          ・文法：英文法の参考書を1冊選んで学習する<br>
-          ・リスニング：おすすめの英語学習アプリを使ってリスニングと発音の練習をする<br>
-          ・スピーキング：英文法の参考書の例文を音読する（音源があればリピートする）、英語日記を書いて添削してもらい、添削後の文章を見ずに言えるまで何度も繰り返し言う
-        </p>
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Krub", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d405f;
+  white-space: nowrap;
+  transition: 0.3s;
+}
 
-        <h3>学習プラン</h3>
-        <p>
-          ・毎朝朝食後：文法書を1章分進める<br>
-          ・昼食後：10〜15分アプリで学習<br>
-          ・毎晩就寝前：3行を目安に英語日記を書いて、HiNativeに投稿する。前日以降に投稿したもので添削されたものがあれば、それを見ずに言えるまで繰り返し声に出して練習する。<br>
-          ・常に：ひとりごとを言うときはすべて英語にする<br>
-          ・短くても文で話せるようになってきたら→オンライン英会話を始める。テーマ別会話から始めて、慣れてきたらフリートークにする。海外旅行先のロールプレイなども。
-        </p>
+.navbar a i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
 
-        <h3>ある日のスケジュール</h3>
-        <table class="time">
-          <tr>
-            <th>Time</th>
-            <th>Schedule</th>
-          </tr>
-          <tr>
-            <td>7:00-8:00</td>
-            <td>起床・朝食</td>
-          </tr>
-          <tr>
-            <td>8:00-8:30</td>
-            <td>英文法書を1章分進める</td>
-          </tr>
-          <tr>
-            <td>8:30-9:00</td>
-            <td>休憩・フリータイム</td>
-          </tr>
-          <tr>
-            <td>9:00-12:00</td>
-            <td>家事</td>
-          </tr>
-          <tr>
-            <td>12:00-12:45</td>
-            <td>ランチ休憩</td>
-          </tr>
-          <tr>
-            <td>12:45-13:00</td>
-            <td>アプリでリスニングと発音の練習</td>
-          </tr>
-          <tr>
-            <td>13:00-18:30</td>
-            <td>在宅ワーク</td>
-          </tr>
-          <tr>
-            <td>18:30-21:00</td>
-            <td>夕食、お風呂</td>
-          </tr>
-          <tr>
-            <td>21:00-21:30</td>
-            <td>オンライン英会話</td>
-          </tr>
-          <tr>
-            <td>21:30-22:00</td>
-            <td>海外ドラマを見る</td>
-          </tr>
-          <tr>
-            <td>22:00-23:30</td>
-            <td>休憩・フリータイム</td>
-          </tr>
-          <tr>
-            <td>23:30-24:00</td>
-            <td>英語日記を書いてHiNativeに投稿、添削された過去の日記を暗唱</td>
-          </tr>
-          <tr>
-            <td>24:00</td>
-            <td>就寝</td>
-          </tr>
-          </table>
-        </div>
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+  color: #fff;
+}
 
-      </div>
-    </section>
+.navbar .getstarted {
+  background: #e2e5fe;
+  padding: 9px 25px;
+  margin-left: 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+  color: #3b4ef8;
+}
 
-  </main><!-- End #main -->
+.navbar .getstarted:hover {
+  color: #fff;
+  background: #3b4ef8;
+}
 
- <!-- ======= Footer ======= -->
- <footer id="footer">
-  <div class="container d-md-flex py-4">
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
 
-    <div class="me-md-auto text-center text-md-start">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Macco</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bikin-free-simple-landing-page-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-    <div class="social-links text-center text-md-right pt-3 pt-md-0">
-      <a href="https://www.instagram.com/macco_english/" class="instagram" title="Instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
-      <a href="https://twitter.com/ohayo_015" class="twitter" title="Twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
-      <a href="https://vm.tiktok.com/ZMRRF4wLX/" class="tiktok" title="TikTok"><span class="iconify" data-icon="bx:bxl-tiktok" target="_blank"></span></a>
-      <a href="https://note.com/libra_joki" class="note" title="note" target="_blank"><span class="iconify" data-icon="mdi:note-outline"></span></a>
-    </div>
-  </div>
-</footer><!-- End Footer -->
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  text-transform: none;
+  font-weight: 500;
+}
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #3b4ef8;
+}
 
-</body>
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
 
-</html>
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #2d405f;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    color: #fff;
+  }
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(29, 41, 60, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 6px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #2d405f;
+}
+
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #89b0ae;
+}
+
+.navbar-mobile .getstarted {
+  margin: 15px;
+}
+
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #3b4ef8;
+}
+
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  border-bottom: 2px solid white;
+  text-align: center;
+}
+
+#hero .container {
+  padding-top: 100px;
+}
+
+#hero p{
+  text-align: center;
+}
+
+@media (max-width:413px){
+  #hero .container {
+    padding-top: 30px;
+  }
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #141d2b;
+  width: 60%;
+  color: #2d405f;
+}
+
+#hero h2 {
+  color: #466393;
+  margin: 15px 0 0 0;
+  font-size: 24px;
+  color: #2d405f;
+}
+
+#hero p{
+  margin: 15px 0 0 0;
+}
+
+#hero .btn-get-started {
+  font-family: 'Kiwi Maru', serif, "Krub", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: block;
+  padding: 8px 32px 10px 32px;
+  margin-top: 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+  background: #89b0ae;
+}
+
+#hero .btn-get-started2 {
+  margin-top: 15px;
+}
+
+#hero .btn-get-started:hover {
+  background: #555b6e;
+}
+
+#hero .hero-img {
+  max-width: 40%;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+  #hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+    width: 100%;
+  }
+  #hero h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  #hero .hero-img {
+    max-width: 70%;
+  }
+}
+
+@media (max-height: 768px) {
+  #hero {
+    height: auto;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f8fb;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2d405f;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.534);
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  background: #89b0ae;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  color: #fff;
+}
+
+.about2 {
+  background: #555b6e;
+  background-size: cover;
+  padding: 60px 0;
+  position: relative;
+  color: #fff;
+}
+
+.about .content, .about2 .content{
+  padding: 0px 30px 0px 0;
+}
+
+.about .section-title h2, .about2 .section-title h2 {
+  color: #fff;
+}
+
+.about .content p, .about2 .content p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+.about .content p, .about2 .content p {
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  }
+}
+
+.about .content .about-btn, .about2 .content .about-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.322);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+#eg{
+  margin-top: 3%;
+}
+
+.about .content .about-btn i, .about2 .content .about-btn i {
+  font-size: 14px;
+}
+
+.about .content .about-btn:hover, .about2 .content .about-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.about .icon-boxes .icon-box, .about2 .icon-boxes .icon-box {
+  margin-top: 30px;
+}
+
+.about .icon-boxes .icon-box i, .about2 .icon-boxes .icon-box i, .icon-box .iconify {
+  font-size: 40px;
+  color: #bee3db;
+  margin-bottom: 10px;
+}
+
+.about .icon-boxes .icon-box h3, .about2 .icon-boxes .icon-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.about .icon-boxes .icon-box p, .about2 .icon-boxes .icon-box p {
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .about .content, .about2 .content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about, .about2 {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+  background: #89b0ae;
+  padding-bottom: 80px;
+}
+
+.services .container{
+  padding-right: var(--bs-gutter-x,1rem);
+  padding-left: var(--bs-gutter-x,1rem);
+}
+
+.services .section-title h2, .services .section-title p {
+  color: #fff;
+}
+
+.services .section-title h2::after {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.services .icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.services .icon-box:hover {
+  transform: scale(1.08);
+}
+
+.services .icon {
+  margin-bottom: 15px;
+}
+
+.services .icon i {
+  font-size: 32px;
+  line-height: 1;
+  color: #2d405f;
+  background: #eff2f8;
+  padding: 20px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.services .title a {
+  color: #2d405f;
+  transition: 0.3s;
+}
+
+.services .title a:hover {
+  color: #89b0ae;
+}
+
+.services p {
+  margin-bottom: 30px;
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .counseling-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.171);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.services .counseling-btn i {
+  font-size: 14px;
+}
+
+.services .counseling-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.services .top-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.171);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin-top: 50px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+
+@media (max-width: 992px) {
+  .services .top-btn {
+    margin-top: 0px;;
+  }
+}
+
+/*--------------------------------------------------------------
+# Inner Page
+--------------------------------------------------------------*/
+.inner-page .question{
+  text-align: center;
+}
+.advice h1, h2, h3, h4, h5{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.advice{
+  text-align:center;
+}
+
+
+.detail img{
+  margin: 10px;
+}
+
+.inner-page .choice-btn {
+  font-size: 1.2rem;
+  display: inline-block;
+  background: #89b0ae;
+  padding: 6px 20px 8px 20px;
+  width: 70%;
+  margin: 10px;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.fu .choice-btn {
+  width: 90%;
+}
+
+@media (min-width: 992px){
+  .fu .choice-btn {
+    width: 70%;
+  }
+}
+
+.inner-page .choice-btn:hover {
+  background: #555b6e;
+}
+
+
+.advice {
+  background: #89b0ae;
+  background-size: cover;
+  padding: 30px 30px;
+  position: relative;
+  color: #fff;
+}
+
+.advice p{
+  margin-bottom: 0px;
+}
+
+.exp img{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.exp .openbox{
+  text-align: center;
+}
+
+.example{
+  text-align: center;
+  margin-bottom:10%;
+}
+
+.example h2{
+  background: #89b0ae;
+  color: #ffffff;
+  padding: 2%;
+  border-radius: 50px;
+}
+
+.example h3{
+  border-bottom: solid 2px #89b0ae;
+}
+
+.example h3, p{
+  text-align: left;
+}
+
+.example img{
+  padding: 3% 0 3% 0;
+}
+
+
+/*--------------------------------------------------------------
+# Detail 学習アドバイス詳細
+--------------------------------------------------------------*/
+
+.detail .container{
+  padding-right: var(--bs-gutter-x,1rem);
+  padding-left: var(--bs-gutter-x,1rem);
+}
+
+.detail, .tips{
+  text-align:left;
+  padding: 30px 0px 0px 0px;
+  
+}
+
+.detail h2{
+  padding:10px 0px;
+}
+
+.detail h3{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.detail h4,h5{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+.detail .inside {
+  padding-top: 40px;
+}
+
+.exp{
+  padding-bottom: 30px;
+}
+
+.book{
+  padding-right:0px !important; 
+  padding-left:0px !important; 
+}
+
+.book p{
+  margin-top: 10px;
+}
+
+.recommend .highlight{
+  background-color: #89b0ae42;
+}
+
+/* Table*/
+#sound{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.time {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#sound td, #sound th, .time td, .time th {
+  text-align:center;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#sound tr:nth-child(even), .time tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#sound tr:hover{
+  background-color: #ddd;
+}
+
+#sound th, .time th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #555b6e;
+  color: white;
+}
+
+.go-tips {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.tips h4{
+  margin-top: 20px;
+}
+
+
+/* 学習相談してみる */
+
+.more{
+  text-align: center;
+}
+
+.more .choice-btn {
+  width: 90%;
+  text-align: center;
+  background-color: #555b6e;
+}
+
+.more .choice-btn:hover {
+  background-color: #89b0ae;
+}
+
+@media (min-width: 414px){
+  .more .choice-btn {
+    width: 350px;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Open box
+--------------------------------------------------------------*/
+
+.openbox input {
+  display: none; /* チェックボックスを隠す */
+}
+.openbox .boxshow {
+  height: 0;
+  opacity: 0; /* 折り畳んだ時に中を透明にする */
+  display: none;/* 閉じた時に中身の要素をなくす */
+  text-align: left;
+  margin: 2% 0% 2% 0%;
+  padding: 1%;
+  background-color: #89b0ae2a;
+}
+.inputcss:checked + .boxshow {
+  height: auto;
+  opacity: 1; /*クリックやタップで中を表示させる*/
+  display: block;/* 折り畳みになるように */
+}
+.openbox label {
+  background: #89b0ae;
+  color:#ffffff;
+  padding: 5px 15px;
+  text-align: center;
+  margin: 1% 3% 2% 3%;
+  border-radius: 50px;
+}
+
+.openbox-navy label {
+  background: #28407e;
+}
+
+.openbox-bottleneck{
+  margin-top: 15px;
+}
+
+.openbox-bottleneck label {
+  background: #ffffff44;
+  margin: 1% 3% 0% 3%;
+}
+
+.openbox-bottleneck .boxshow {
+  height: 0;
+  opacity: 0; /* 折り畳んだ時に中を透明にする */
+  display: none;/* 閉じた時に中身の要素をなくす */
+  text-align: left;
+  margin: 20px 0 0 0;
+  padding: 1%;
+  background-color: #ffffff44;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  margin-top: 60px;
+  padding: 5px 0;
+  box-shadow: 0px 2px 15px rgba(45, 64, 95, 0.06);
+  font-size: .8rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #3d5782;
+  content: "/";
+}
+
+@media (min-width: 992px) {
+  .breadcrumbs {
+    margin-top: 70px;
+    font-size: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  color: #2d405f;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Krub", sans-serif;
+  color: #4e6fa4;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d405f;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #6c7afa;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #3b4ef8;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2d405f;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid #9da7fc;
+}
+
+#footer .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #3b4ef8;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type="submit"]:hover {
+  background: #0a22f6;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #555b6e;
+  color: #ffffff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 5px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #89b0ae;
+  color: #fff;
+  text-decoration: none;
+}
